@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+.navitems{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    font-weight: 500;
+    margin-left: 3vh;
+    color: #A9A9A9;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s all ease-in-out;
+}
+
+.item:hover{
+    color: #40b9e9;
+}
+
+.button{
+    border: 1px solid #40b9e9;
+    border-radius: 5px;
+    padding: 1vh 2vh;
+}

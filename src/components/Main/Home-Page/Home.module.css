@@ -1,0 +1,147 @@
+.home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.title_info{
+    user-select: none;
+    width: fit-content;
+    font-size: 60px;
+    color: #40b9e9;
+    margin-bottom: 1vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.title_info span{
+    transition: 0.3s all ease-in-out;
+}
+
+
+.title_info:hover span{
+    color: #FFFFFF;
+}
+
+.occupation_info{
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 1vh;
+}
+
+.description_info{
+    font-weight: 400;
+    font-size: 17px;
+    color: #A9A9A9;
+    max-width: 37ch;
+}
+
+.info2{    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.button_info2{
+    position: relative;
+}
+
+.button_info2 button{
+    background-color: transparent;
+    border: 2px solid #40b9e9;
+    outline: none;
+    color: #FFFFFF;
+    padding: 1vh 2vh;
+    border-radius: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hold_image_info2{
+    position: relative;
+    margin-left: auto;
+}
+
+.picture_info2{
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.pic_blur_info2{
+    position: absolute;
+    z-index: 3;
+    width: 250px;
+    height: 250px;
+    transition: 0.3s all ease-in-out;
+}
+
+.pic_info2{
+    position: absolute;
+    z-index: 2;
+    background-color: #FFFFFF;
+    width: 250px;
+    height: 250px;
+    background-image: url('../../../images/pfp.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.border_picture_info2{
+    z-index: 1;
+    position: absolute;
+    left: 1.5vh;
+    top: 1.5vh;
+    width: 250px;
+    height: 250px;
+    border: 3px solid #05B4FF;
+    transition: 0.5s all ease-in-out;
+}
+
+.picture_info2:hover .pic_blur_info2{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.picture_info2:hover .border_picture_info2{
+    left: 0;
+    top: 0;
+    transform: scale(1.05);
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line_footer{
+    width: 3px;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+
+.icons_footer{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.icons_footer a{
+    color: #FFFFFF;
+}

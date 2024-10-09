@@ -1,0 +1,43 @@
+.skill_tab {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    color: #A9A9A9;
+    font-weight: 450;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for background and text color */
+    white-space: nowrap;
+    font-size: 17px;
+}
+
+.skill_line {
+    height: 100%;
+    width: 2px;
+    background-color: #424040;    
+    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out; /* Ensure line transitions smoothly */
+}
+
+.skill_name {
+    width: 100%;
+    padding: 2vh;
+    transition: transform 0.3s ease-in-out; /* Add transition for scaling effect */
+}
+
+.skill_tab:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #40b9e9;
+}
+
+.selected {
+    background-color: rgba(0, 0, 0, 0.5); /* Change background when selected */
+    color: #40b9e9;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Ensure transitions are smooth */
+}
+
+.line_selected {
+    background-color: #40b9e9; /* Change the color of the line when selected */
+    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out; /* Smooth transition for color and height */
+}

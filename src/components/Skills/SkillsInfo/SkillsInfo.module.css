@@ -1,0 +1,21 @@
+.skills_info_tab{
+    display: flex;
+    flex-direction: column;
+}
+
+.title_skills_info_tab{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.description_skills_info_tab {
+    font-weight: 400;
+    color: #A9A9A9;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive columns */
+    grid-gap: 10px; /* Adds spacing between grid items */
+    padding: 10px;
+}

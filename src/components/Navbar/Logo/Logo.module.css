@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.logo {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #1E1E1E;
+    border-radius: 50%;
+    border: 3px solid #40b9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: 1s all ease-in-out;
+    z-index: 5;
+}
+
+.logoName {
+    z-index: 2;
+    font-size: 20px;
+    color: #40b9e9;
+    font-weight: 500;
+}
+
+.circle2 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #40b9e9;
+    border-radius: 50%;
+    border: 3px solid #40b9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    left: 0.3vh;
+    top: 0.3vh;
+    transition: all 1s ease-in-out;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+    z-index: 6;
+}
+
+.circle:hover ~ .circle2 {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.1);
+    transition: opacity 1s ease-in-out;
+}
