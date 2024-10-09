@@ -2,7 +2,7 @@
 
 ## About Me
 
-Hi, I’m **Jorge Vieira** – a passionate **Junior Developer** from Porto. At the age of **20**, I am continuously learning and growing in the world of web development. I love experimenting with new technologies and frameworks, particularly **React**, and I'm constantly trying to improve my skills by building projects like this one.
+Hi, I’m **Jorge Vieira** – a passionate **Junior Developer** from Porto. I am continuously learning and growing in the world of web development. I love experimenting with new technologies and frameworks, particularly **React**, and I'm constantly trying to improve my skills by building projects like this one.
 
 Feel free to explore the project, leave feedback, or connect with me on [GitHub](https://github.com/JorgeFMVieira).
 
