@@ -36,3 +36,17 @@
     flex-direction: row;
     cursor: pointer;
 }
+
+@media screen and (max-width: 460px) {
+    .tab_contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desc_tab_contact{
+        margin: 0;
+    }
+}

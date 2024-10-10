@@ -2,12 +2,10 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import styles from './Experience.module.css'
 import { motion, useInView } from 'framer-motion'
 import Timeline from './Timeline/Timeline';
-
 const Experience = () => {
 
     const ref = useRef(null);
     const isInViewTitle = useInView(ref);
-
 
     return (
         <div className={styles.experience} id='experience'>
@@ -29,8 +27,10 @@ const Experience = () => {
                 <Timeline title='2024-Present' description='Open To Work' type='right' />
                 <div className={styles.line} style={{ height: 100*4+50 + "px"}}></div>
             </div>
-            <div className={styles.timeline_info}>
-                <span>Junior Developer from Porto, Portugal, with 2 years of experience in software development, passionate about creating innovative solutions.</span>
+            <div className={styles.wrapper_timeline_info}>
+                <div className={styles.timeline_info}>
+                    <span>Junior Developer from Porto, Portugal, with 2 years of experience in software development, passionate about creating innovative solutions.</span>
+                </div>
             </div>
         </div>
     )

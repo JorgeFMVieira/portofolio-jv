@@ -26,3 +26,72 @@
     border-radius: 5px;
     padding: 1vh 2vh;
 }
+
+.wrapper_navitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_nav{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all ease-in-out;
+    margin-left: auto;
+    color: #FFFFFF;
+    display: none;
+}
+
+.menu_nav:hover{
+    color: #40b9e9;
+}
+
+.closeMenuNav,
+.closeMenuNavInVisible{
+    display: none;
+}
+
+.closeMenuNavVisible{
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+    .navitems{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu_nav{
+        display: flex;
+    }
+
+    .openNavItems{
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        top: 10vh;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+
+    .openNavItems .item{
+        margin-top: 10vh;
+    }
+
+    .closedNavItems{
+        width: 0;
+    }
+
+    .openNavItems .item{
+        margin-left: 0;
+    }
+
+    .menu_nav{
+        opacity: 1;
+        visibility: visible;
+    }
+}

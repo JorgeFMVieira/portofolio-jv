@@ -41,3 +41,9 @@
     background-color: #40b9e9; /* Change the color of the line when selected */
     transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out; /* Smooth transition for color and height */
 }
+
+@media screen and (max-width: 315px) {
+    .skill_tab{
+        font-size: 15px;
+    }
+}

@@ -10,11 +10,11 @@ export type TimelineProps = {
 
 const Timeline = (props: TimelineProps) => {
     return (
-        <div className={`${styles.container_timeline} ${styles[`${props.type}_container`]}`}>
+        <motion.div className={`${styles.container_timeline} ${styles[`${props.type}_container`]}`}>
             <span className={styles.title_timeline}>{props.title}</span>
             <span className={styles.description_timeline}>{props.description}</span>
             <motion.div whileHover={{ scale: 1.2, cursor: "pointer" }} className={`${styles.bubble} ${styles[`bubble_${props.type}`]}`}></motion.div>
-        </div>
+        </motion.div>
     )
 }
 

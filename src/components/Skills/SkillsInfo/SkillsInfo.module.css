@@ -19,3 +19,9 @@
     grid-gap: 10px; /* Adds spacing between grid items */
     padding: 10px;
 }
+
+.skill_item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

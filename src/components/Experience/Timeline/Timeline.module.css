@@ -67,3 +67,23 @@
     scale: 1.2;
     background-color: #FFFFFF;
 }
+
+@media screen and (max-width: 785px) {
+    .container_timeline{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .container_timeline{
+        font-size: 1.5vh;
+    }
+
+    .description_timeline{
+        font-size: 1.7vh;
+    }
+
+    .container_timeline{
+        width: 50%;
+    }
+}

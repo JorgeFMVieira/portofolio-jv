@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './Contact.module.css'
 import { motion, useInView } from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,9 +31,12 @@ const Contact = () => {
                     <TabContact title='Resume' iconsOnly={false} textIcons={true} icons={[faDownload]} iconsUrl={[]} description='Download Resume' descriptionUrl="/jorge_vieira_cv.pdf" isEmail={false} />
                 </div>
             </div>
-            <div className={styles.timeline_info}>
-                <span>I'm actively seeking new opportunities and would love to connect! Feel free to reach out with any questions or just to say hello. I'll make sure to respond as soon as I can!</span>
+            <div className={styles.wrapper_timeline_info}>
+                <div className={styles.timeline_info}>
+                    <span>I'm actively seeking new opportunities and would love to connect! Feel free to reach out with any questions or just to say hello. I'll make sure to respond as soon as I can!</span>
+                </div>
             </div>
+    
         </div>
     )
 }

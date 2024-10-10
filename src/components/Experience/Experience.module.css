@@ -60,3 +60,27 @@
     font-weight: 450;
     max-width: 50ch;
 }
+
+@media screen and (max-width: 785px) {
+    .timeline{
+        width: 400px;
+    }
+
+    .wrapper_timeline_info{
+        width: 100%;
+        padding: 5vh;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .title_experience{
+        font-size: 8vw;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .timeline{
+        font-size: 3vw;
+        width: 100%;
+    }
+}

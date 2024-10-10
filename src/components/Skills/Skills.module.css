@@ -39,3 +39,33 @@
     height: auto;
     padding: 1vh 3vh;
 }
+
+
+@media screen and (max-width: 780px) {
+    .skills{
+        padding: 0 5vh;
+    }
+
+    .skills_box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .skills_box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills_infos{
+        margin-top: 3vh;
+        padding: 1vh;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .title_skills{
+        font-size: 8vw;
+    }
+}
